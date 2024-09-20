@@ -14,6 +14,11 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
+.page__body {
+  background-color: var(--bg);
+  margin: 0;
+}
+
 a {
   color: inherit;
 }
@@ -34,6 +39,9 @@ img {
   --main: #eee;
   --second: #00d2b5;
   --light-text: #fff;
+  --first-family: "Josefin Sans", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --third-family: "Poppins", sans-serif;
 }
 
 .visually-hidden {
@@ -47,8 +55,12 @@ img {
   clip: rect(0 0 0 0);
 }
 
+.header {
+  padding: 25px 0;
+}
+
 .container {
-  max-width: 1352px;
+  max-width: 1382px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -59,6 +71,59 @@ img {
   cursor: pointer;
 }
 
+/* ----------- */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero {
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__link:focus {
+  outline: none;
+}
+
+.nav__link:focus-visible {
+  outline: 2px dashed var(--second);
+  outline-offset: 3px;
+}
+
+.nav__link {
+  font-family: var(--first-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--main);
+  transition: color .3s ease-in-out;
+}
+
+@media (any-hover: hover) {
+  .nav__link:hover {
+    color: var(--second);
+  }
+}
+
 .nav__link--active {
   color: var(--second);
+}
+
+.btn {
+  background-color: var(--main);
+  border-radius: 3px;
+  color: #000;
+  font-family: var(--first-family);
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px;
 }
