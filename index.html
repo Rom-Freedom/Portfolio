@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio</title>
 </head>
@@ -29,7 +32,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="btn">Scheduale a call</button>
+            <button class="btn reset-btn">Scheduale a call</button>
         </div>
     </header>
 
@@ -54,10 +57,25 @@
                             <a href="#" class="latest-shots__all">View all</a>
                             <div class="latest-shots__content">
                                 <!-- Slider -->
-                                 <a href="#" class="latest-shots__link">
-                                    <img src="./img/photo.jpg" alt="link">
+                                 <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                    <img src="./img/photo.jpg" alt="link" class="latest-shots__image" width="200" height="100">
+                                 </a>
+                                 <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                    <img src="./img/night-photo.jpg" alt="link" class="latest-shots__image" width="200" height="100">
+                                 </a>
+                                 <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                    <img src="./img/photo.jpg" alt="link" class="latest-shots__image" width="200" height="100">
                                  </a>
                             </div>
+                            <!-- Nav -->
+                             <div class="latest-shots__nav">
+                                <button class="btn-reset latest-shot__btn latest-shot__btn--left" aria-label="Slide left">
+                                    <i class="ri-arrow-left-line"></i>
+                                </button>
+                                <button class="btn-reset latest-shot__btn latest-shot__btn--right" aria-label="Slide right">
+                                    <i class="ri-arrow-right-line"></i>
+                                </button>
+                             </div>
                         </div>
                     </div>
                 </div>

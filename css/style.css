@@ -11,6 +11,7 @@ html {
   border: none;
   outline: none;
   scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 ::selection {
@@ -28,6 +29,36 @@ img {
   color: #fff;
 }
 
+:root {
+  --bg: #1f2022;
+  --main: #eee;
+  --second: #00d2b5;
+  --light-text: #fff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: none;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1352px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn-reset {
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
 .nav__link--active {
-  color: rgb(41, 28, 213);
+  color: var(--second);
 }
