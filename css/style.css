@@ -119,7 +119,8 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top left;
-  min-height: 882px;
+  height: calc(100vh - 100px);
+  /* min-height: 882px; */
 }
 
 .hero__left,
@@ -136,7 +137,7 @@ img {
 .hero__level {
   position: relative;
   max-width: 380px;
-  margin-top: 290px;
+  /* margin-top: 430px; */
   padding-left: 30px;
   font-family: var(--second-family);
   font-weight: 800;
@@ -198,6 +199,61 @@ img {
   line-height: 187%;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+/* SLIDER */
+.latest-shots__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.latest-shots__title {
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--main)
+}
+
+.latest-shots__all {
+  font-family: var(--second-family);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--second);
+}
+
+.latest-shots__content {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /* width: calc(100% + 80px); */
+}
+
+.latest-shots__image {
+  border-radius: 5px;
+}
+
+.latest-shots__link {
+  flex-shrink: 0;
+}
+
+.latest-shots__nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 28px;
+}
+
+.slider-arrow {
+  color: var(--main);
+}
+
+.latest-shot__btn {
+  width: 28px;
+  height: 28px;
 }
 
 .nav__list {
