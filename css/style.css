@@ -14,10 +14,6 @@ html {
   font-family: var(--first-family);
 }
 
-.stop__scroll {
-  overflow: hidden;
-}
-
 @font-face {
   font-family: "Josefin Sans";
   src: url("../fonts/JosefinSans-Bold.woff2") format("woff2");
@@ -76,6 +72,10 @@ img {
   --first-family: "Josefin Sans", sans-serif;
   --second-family: "Montserrat", sans-serif;
   --third-family: "Poppins", sans-serif;
+}
+
+.stop__scroll {
+  overflow: hidden;
 }
 
 .visually-hidden {
