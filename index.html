@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Portfolio</title>
 </head>
 <body class="page__body">
@@ -63,24 +64,59 @@
                             <h2 class="latest-shots__title">Latest shots</h2>
                             <a href="#" class="latest-shots__all">View all</a>
                         </div>
+
+                        <!-- SLIDER -->
                         <div class="latest-shots__content">
-                            <!-- Slider -->
-                             <a href="#" class="latest-shots__link" aria-label="Go to shot">
-                                <img src="./img/night-sky.webp" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
-                             </a>
-                             <a href="#" class="latest-shots__link" aria-label="Go to shot">
-                                <img src="./img/nat.jfif" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
-                             </a>
-                             <a href="#" class="latest-shots__link" aria-label="Go to shot">
-                                <img src="./img/moon.jpg" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
-                             </a>
-                        </div>
+                            <div class="swiper" id="gallery">
+                                <div class="swiper-wrapper">
+                                    <!-- First Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/night-sky.webp" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <!-- Second Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/nat.jfif" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <!-- Third Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/moon.jpg" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+
+                                    <!-- Fourth Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/ocean.webp" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <!-- Fifth Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/mountain.jfif" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <!-- Sixth Slide -->
+                                    <div class="swiper-slide">
+                                        <a href="#" class="latest-shots__link" aria-label="Go to shot">
+                                            <img src="./img/Sunflower-field.webp" alt="link" class="latest-shots__image" width="250" height="150" loading="lazy">
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                    </div>
                         <!-- Nav -->
                          <div class="latest-shots__nav">
-                            <button class="btn-reset latest-shot__btn latest-shot__btn--left" aria-label="Slide left">
+                            <button class="btn-reset latest-shot__btn latest-shot__btn--left" aria-label="Slide left" id="gallery-prev">
                                 <i class="ri-arrow-left-line slider-arrow"></i>
                             </button>
-                            <button class="btn-reset latest-shot__btn latest-shot__btn--right" aria-label="Slide right">
+                            <button class="btn-reset latest-shot__btn latest-shot__btn--right" aria-label="Slide right" id="gallery-next">
                                 <i class="ri-arrow-right-line slider-arrow"></i>
                             </button>
                          </div>
